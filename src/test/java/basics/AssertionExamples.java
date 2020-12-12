@@ -1,5 +1,6 @@
 package basics;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -36,7 +37,7 @@ public class AssertionExamples {
         //when
 
         //then
-        assertArrayEquals(firstArr, secondArr);
+        Assertions.assertThat(firstArr).isEqualTo(secondArr);
     }
     @Test
     public void testAssertNull(){

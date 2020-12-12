@@ -53,4 +53,5 @@ public class AssertJTest {
         //then
         Assertions.assertThat(result).isEqualTo(2 * Math.PI * x);
     }
+
 }
